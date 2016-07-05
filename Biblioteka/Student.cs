@@ -73,5 +73,20 @@ namespace Biblioteka
 
             return pom;
         }
+
+        public int trecaMetoda(Predmet p)
+        {
+            int br = 0;
+
+            foreach (Ispit i in spisakIspita)
+            {
+                if (i.Predmet.Equals(p))
+                {
+                    br++;
+                }
+            }
+
+            return br;
+        }
     }
 }

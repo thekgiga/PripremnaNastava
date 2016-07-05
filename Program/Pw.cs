@@ -14,7 +14,6 @@ namespace Program
         public List<Student> prvaMetoda(string smer)
         {
             List<Student> lista = new List<Student>();
-
             foreach (Student s in spisakStudenata)
             {
                 if (s.BrIndeksa.StartsWith(smer))
