@@ -26,6 +26,24 @@ namespace Program
 
         }
 
+        public List<Ispit> cetvrtaMetoda(DateTime datum)
+        {
+            List<Ispit> polozeni = new List<Ispit>();
+            foreach (Student s in spisakStudenata)
+            {
+                foreach (Ispit i in s.SpisakIspita)
+                {
+                    if (i.Datum.CompareTo(datum) < 0 )
+                    {
+                        polozeni.Add(i);
+                    }
+                }
+            }
+
+            return polozeni;
+
+        }
+
         static void Main(string[] args)
         {
         }
