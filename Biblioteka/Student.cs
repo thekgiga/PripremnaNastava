@@ -57,6 +57,19 @@ namespace Biblioteka
         {
             string pom = "";
 
+            foreach (Ispit i in spisakIspita)
+            {
+                if(i.Predmet.Equals(p) && i.Ocena>5 && i.Ocena < 11)
+                {
+                    pom = "polozio";
+                }
+                else
+                {
+                    pom = "pao";
+                }
+
+            }
+
 
             return pom;
         }

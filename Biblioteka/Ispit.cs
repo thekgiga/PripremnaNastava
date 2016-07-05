@@ -10,23 +10,12 @@ namespace Biblioteka
     {
         enum ispitniRok{januar, februar, jun, jul, septembar, oktobar}
 
-        string predmet;
+        Predmet predmet;
         int ocena;
         ispitniRok rok;
         DateTime datum;
         
-        public string Predmet
-        {
-            get
-            {
-                return predmet;
-            }
-
-            set
-            {
-                predmet = value;
-            }
-        }
+        
 
         public int Ocena
         {
@@ -64,6 +53,19 @@ namespace Biblioteka
             set
             {
                 datum = value;
+            }
+        }
+
+        public Predmet Predmet
+        {
+            get
+            {
+                return predmet;
+            }
+
+            set
+            {
+                predmet = value;
             }
         }
     }
