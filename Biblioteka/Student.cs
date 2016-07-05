@@ -9,8 +9,10 @@ namespace Biblioteka
     public class Student
     {
         string ime;
-        string brIndeksa;
+        string brIndeksa; // pocinje sa smerom
         List<Ispit> spisakIspita;
+
+
 
         public string Ime
         {
@@ -49,6 +51,14 @@ namespace Biblioteka
             {
                 spisakIspita = value;
             }
+        }
+
+        public string drugaMetoda(Predmet p)
+        {
+            string pom = "";
+
+
+            return pom;
         }
     }
 }
