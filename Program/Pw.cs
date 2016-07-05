@@ -63,7 +63,25 @@ namespace Program
 
         }
 
+        public double sestaMetoda(int godina)
+        {
+         
+            int brojac = 0;
+            double zbir = 0;
 
+            foreach (Student s in spisakStudenata)
+            {
+                foreach (Ispit i in s.SpisakIspita)
+                {
+                    if(i.Ocena > 5)
+                    {
+                        zbir += i.Ocena;
+                        brojac++;
+                    }
+                }
+            }
+            return zbir / brojac;
+        }
 
         static void Main(string[] args)
         {
