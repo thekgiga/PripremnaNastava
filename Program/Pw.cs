@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Biblioteka;
 
 namespace Program
@@ -43,6 +40,30 @@ namespace Program
             return polozeni;
 
         }
+
+        public List<Ispit> petaMetoda(Ispit.ispitniRok ispitniRokic)
+        {
+            List<Ispit> spisak =new List<Ispit>();
+
+            foreach (Student s in spisakStudenata)
+            {
+                foreach (Ispit i in s.SpisakIspita)
+                {
+                    if (i.Rok.Equals(ispitniRokic))
+                    {
+                        if (!spisak.Contains(i))
+                        {
+                            spisak.Add(i);
+                        }
+                    }
+                }
+            }
+
+            return spisak;
+
+        }
+
+
 
         static void Main(string[] args)
         {

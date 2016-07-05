@@ -8,7 +8,7 @@ namespace Biblioteka
 {
     public class Ispit
     {
-        enum ispitniRok{januar, februar, jun, jul, septembar, oktobar}
+        public enum ispitniRok{januar, februar, jun, jul, septembar, oktobar} //jebeni enum mora da bude public
 
         Predmet predmet;
         int ocena;
@@ -30,7 +30,7 @@ namespace Biblioteka
             }
         }
 
-        private ispitniRok Rok
+        public ispitniRok Rok
         {
             get
             {
